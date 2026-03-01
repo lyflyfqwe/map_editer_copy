@@ -1,0 +1,40 @@
+plan:
+    local:
+        bound_min: [-2.0, -2.0, -0.6]
+        bound_max: [2.0, 2.0, 0.5]
+        resolution: 0.05
+        safe_cost: 0.5
+        safe_radius: 3
+        offset_robot_p: [0.0, 0.0, 0.0]
+        offset_robot_rpy: [0.0, 0.0, 0.0]
+        sleep_time: 50
+    global:
+        bound_min: [-10.0, -10.0, -1.0]
+        bound_max: [10.0, 10.0, 1.0]
+        resolution: 0.05
+        safe_cost: 0.5
+        safe_radius: 3
+        pcd_map: "/home/qwelyflyf/Documents/point_cloud/flower_2.pcd"
+    topic_pub_odom: "/nav_core_odom"
+    topic_sub_click: "/clicked_point"
+    topic_pos_2d: "rm_nav_goal"
+    service_nav: "/rm_nav"
+    topic_pub_local_state: "/nav_core_local_state"
+    service_set_local_state: "/rm_set_l_state"
+sensor:
+    topic_sub_icp: "/icp_odom"
+    topic_sub_cloud: "/cloud_registered_body"
+    topic_sub_odom: "/fast_lio_odom"
+    FOV: [-7.0, 52.0, -90.0, 90.0]
+visual:
+    topic_pub_cloud_global: "/nav_core_cloud_g"
+    topic_pub_cloud_local: "/nav_core_cloud_l"
+    sleep_pub_cloud_global: 1000
+    sleep_pub_cloud_local: 50
+    topic_pub_safe_p:  "/nav_core_safe_p"
+    topic_pub_path_global: "/nav_core_path_g"
+    topic_pub_path_local: "/nav_core_path_l"
+    topic_pub_robot: "/nav_core_robot"
+    
+
+
