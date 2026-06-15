@@ -42,4 +42,9 @@ map_editer_copy/
 ├── .vscode/                   # VS Code 配置
 ├── .gitignore
 └── README.md
+
+
+```
+## 启动
+ros2 launch auto_start planning.launch.py
 ```
