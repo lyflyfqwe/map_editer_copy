@@ -5,15 +5,15 @@
 
 ## 项目简介
 
-本项目围绕地图编辑与机器人运动规划展开，包含以下核心模块：
+本项目是通过rviz2修改PCD地图，通过修改nav_fixed_global_ros.yaml文件可以修改需要编辑的地图路径、地图配置、编辑参数配置和可视化配置
+
+<img width="411" height="324" alt="image" src="https://github.com/user-attachments/assets/d6974907-4eab-4204-95b6-a4e9334dfe32" />
 
 - **altitude_map**：高程地图相关功能模块
 - **path_motion_planning**：路径规划与运动控制核心模块
 - **auto_start**：启动与运行配置模块，包含 launch、rviz 和 config 资源
 - **debug_tools**：调试辅助工具
 - **rm_interface**：接口相关模块
-
-从当前仓库结构来看，该项目更偏向于机器人地图处理、轨迹规划与系统集成场景。
 
 ---
 
