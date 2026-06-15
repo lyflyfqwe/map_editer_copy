@@ -46,5 +46,5 @@ map_editer_copy/
 
 ```
 ## 启动
-ros2 launch auto_start planning.launch.py
 ```
+ros2 launch auto_start planning.launch.py
